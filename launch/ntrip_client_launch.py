@@ -80,8 +80,8 @@ def generate_launch_description():
                   }
                 ],
                 # Uncomment the following section and replace "/gx5/nmea/sentence" with the topic you are sending NMEA on if it is not the one we requested
-                #remappings=[
-                #  ("nmea", "/gx5/nmea/sentence")
-                #],
+                remappings=[
+                  ('/fix', '/ublox_gps_node/fix')
+                ],
           )
       ])
